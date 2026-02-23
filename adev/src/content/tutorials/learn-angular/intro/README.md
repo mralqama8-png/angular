@@ -1,17 +1,48 @@
-# Welcome to the Angular tutorial
+.
+const express = require('express');
 
-This interactive tutorial will teach you the basic building blocks to start building great apps with Angular.
+const app = express();
 
-## How to use this tutorial
+const port = 3000;
 
-You'll need to have basic familiarity with HTML, CSS and JavaScript to understand Angular.
+app.use(express.json());
 
-Each step represents a concept in Angular. You can do one, or all of them.
+let users = [];
 
-If you get stuck, click "Reveal answer" at the top.
+let snaps = [];
 
-Alright, let's [get started](/tutorials/learn-angular/1-components-in-angular).
+app.post('/login', (req, res) => {
 
-## Using AI for Development
+const { username, password } = req.body;
 
-In case you're following this tutorial in your preferred AI powered IDE, [check out Angular prompt rules and best practices](/ai/develop-with-ai).
+// user authentication logic yahaan aayeg
+
+}); res.json({ message: 'Login successful' })
+
+app.post('/register', (req, res) => {
+
+const { username, password } = req.body;
+
+// user registration logic yahaan aayega
+
+}); res.json({ message: 'Registration success
+
+app.get('/snaps', (req, res) => {
+
+res.json(snaps);
+
+});
+
+app.post('/sendSnap', (req, res) => {
+
+const { from, to, snap } = req.body;
+
+// snap sending logic yahaan aayega
+
+}); res.json({ message: 'Snap sent successful
+
+app.listen(port, () => {
+
+}); console.log(Server started on port ${port
+
+Ab, frontend ke liye:
